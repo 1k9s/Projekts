@@ -1,0 +1,106 @@
+1. Problēmas izpēte un analīze
+1.1. Problēmas skaidrojums
+Mācoties patstāvīgi, bieži ir grūti plānot laiku, saglabāt motivāciju un ievērot regulārus pārtraukumus. 
+Bez skaidras struktūras mācību laiks var kļūt haotisks, kas samazina koncnentrēšanās spējas un mācību efektivitāti.
+Tāpēc nepieciešams rīks, kas palīdz sadalīt mācību un atpūtas laiku.
+
+1.2. Izpētes metodes
+- Interneta resursu izpēte par laika plānošanu un mācīšanās metodēm(kā Pomodoro tehnika).
+- Esošo laika plānošanas lietotņu analīze.
+
+1.3. Izpētes process
+- Analizē dažādas mācīšanās metodes.
+- Sakopo datus un pielieto biežāk sastopamās stratēģijas.
+
+1.4. Mērķauditorija
+- Skolēni, studenti un ikviens, kurš mācās patstāvīgi un vēlas uzlabot laika plānošanu.
+
+1.5. Programmatūras projekta apraksts
+Tiek izstrādāta taimeru lietotne, kas automātiski aprēķina mācību un pārtraukumu laikus, 
+kā arī piedāvā motivējošus paziņojumus, lai dotu papildus motivāciju.
+
+2. Programmatūras prasību specifikācija
+2.1. Funkcionālās prasības
+1. Laika ievade
+- Katra ievadītā laika mērvienība tiek limitēta līdz 59.
+2. Intervālu aprēķināšana
+- Ievadītais laiks tiek sadalīts darba un atpūtas laikos.
+3. Vizuāla intervālu maiņa
+- Intervāli tiek vizuāli attēloti un parādīts šī brīža intervāls.
+- Mainoties intervālam taimeris attēlo konkrētā intervāla laiku.
+- Mainoties intervālam tiek mainīts nosaukums "Darbs" vai "Atpūta".
+- Mainoties intervālam fona krāsa atbilst intervālam.
+- Atpūtas laikā tiek rādīti motivējoši pazņojumi.
+
+2.2. Nefunkcionālās prasības
+Programmu paredzēts izstrādāt kā darbvirsmas programmatūru ar grafisko saskarni.
+Programmu paredzēts darbināt uz datora ar operētājsistēmu Windows.
+Programmu paredzēts veidot ar vienkāršu dizainu.
+
+3. Programmatūras projekta izstrādes plāns
+3.1. Izvēlētā izstrādes modeļa pamatojums
+- Projekta realizācijai tiks izvēlēta agile metodika, 
+jo ņemot vērā, ka projekta izveides laiks ir limitēts, labākais ir ātrs un elastīgs modelis.
+3.2. Izstrādes plāns
+1. Programmatūras prasību analīze un specifikācija.
+2. Programmas prototipa izstrāde.
+4. Testēsāna un atkļūdošana.
+3. Dokumentācijas izveide.
+5. Lietotāja ceļvedis.
+
+4. Programmatūras projektējums
+4.1. Tehnoloģiju apraksts
+- programma tiks rakstīta programmēšanas valodā Python izmantojot Tkinter bibliotēku;
+- programma izstrādei tiks izmantota izstrādes vide Visual Studio Code;
+
+4.2. Funkcionalitātes apraksts
+
+///////////////////////////////////
+
+5. Atkļūdošana un akcepttestēšana
+Apraksts
+5.2. Testpiemēru kopa
+T1 Klikšķis uz programmas palaišanas ikonas:
+- Pa visu ekrānu atveras programmas sākuma skats
+- Redzama aktīva programmas loga minimizēšanas poga
+- Redzama neaktīva programmas loga maksimizēšanas poga
+- Redzama aktīva programmas loga aizvēršanas poga
+
+T2 Lietotāja darbības ārpus loga:
+- Klikšķinot uz programmas logu minimizēšanas poga, programmas logs tiek pievērts un novietots uzdevumu joslā.
+- Klikšķinot uz programmas ikonas uzdevumu joslā, programmas logs tiek atjaunots maksimālā izmērā un sākotnējā izskatā.
+- Klikšķinot uz programmas loga maksimizēšanas pogas, nekas nemainās.
+- Klikšķinot uz programmas loga aizvēršanas pogas, programma tiek aizvērta.
+
+T3 Darbība sākuma skatā:
+- Spiežot uz ievades laukiem var ievadīt kopējo mācīšanās laiku.
+- Spiežot uz pogas "Sākt" tiek atvērts galvenais skats.
+- Spiežot uz atpakaļ pogas - "<" tiek atvērts sākuma skats.
+
+T4 Darbības galvenajā skatā:
+- Atveroties galvenajam skatam redzams virsraksts "Darbs".
+- Atveroties galvenajam skatam sākas darba taimeris.
+- Spiežot uz pogas beigt darbu
+    Ja darba laiks salīdzinoši ar kopējo laiku ir par mazs, tad parādīts paziņojums.
+    Ja darba laiks pietiekošs, tad tiek attēlots mācību grafiks.
+
+T5 Izveidots grafiks:
+- Tiek attēlots atlikušais atpūtas laiks.
+- Redzams virsraksts "Atpūta".
+- Redzams motivējošs teksts.
+
+T6 Beidzoties intervāla laikam:
+- Notiek nākošais intervāls(darbs/atpūta).
+- Virsraksts mainās ar intervāla maiņu.
+
+T7 Beidzoties intervāliem:
+- Taimeris apstājas
+
+
+6. Lietotāja ceļvedis
+
+1. Sākuma skatā ievada vēlamo mācību laiku.
+2. Nospiest pogu sākt.
+3. Sākas taimeris un var sākt darbu, kad beidzas motivācija spiest pogu "Pabeigt darbu".
+4. Tiek izveidots darba grafiks.
+5. Pārtraukuma laikā atpūtieties un pēc tam turpiniet mācības.
