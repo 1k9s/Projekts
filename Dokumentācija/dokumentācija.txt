@@ -54,8 +54,28 @@ jo ņemot vērā, ka projekta izveides laiks ir limitēts, labākais ir ātrs un
 - programma izstrādei tiks izmantota izstrādes vide Visual Studio Code;
 
 4.2. Funkcionalitātes apraksts
-
-///////////////////////////////////
+tira_ievadi()
+- Dzēš ievades tekstu, kad uz tā uzspiež.
+limite_laiku()
+- Ievadīto laiku limitē līdz 59.
+atpakal()
+- Ielādē sākuma skatu.
+izveido_sarakstu()
+- izveido sarakstu ar darba un atpūtas intervāliem.
+pievieno_laiku():
+atnem_laiku():
+- Abi attēlo laiku stundās, minūtēs un sekundēs.
+- atnem_laiku skaita laiku uz atpakaļ un pievieno_laiku skaita uz priekšu.
+- Kad atnem_laiku beidzas laiks tas aktivizē partaisa_sarakstu.
+attelo_sarakstu()
+- Vizuāli attēlo sarakstu pirmo reizi.
+- Maina virsrakstu, fona krāsu.
+partaisa_sarakstu()
+- Vizuāli attēlo sarakstu katru nākošo reizi.
+- Maina virsrakstu, fona krāsu.
+formate_laiku()
+- parāda laiku stundās, minūtēs un sekundēs priekš partaisa_sarakstu() un attelo_sarakstu(),
+kur šāda vajadzība atkārtojas.
 
 5. Atkļūdošana un akcepttestēšana
 Apraksts
@@ -95,7 +115,6 @@ T6 Beidzoties intervāla laikam:
 
 T7 Beidzoties intervāliem:
 - Taimeris apstājas
-
 
 6. Lietotāja ceļvedis
 
